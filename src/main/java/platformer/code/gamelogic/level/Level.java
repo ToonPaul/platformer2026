@@ -213,10 +213,6 @@ public class Level {
 		map.addTile(col, row, w);
 		
         //check if we can go down
-		//New code:
-
-
-		
 		if(row+1 < map.getTiles()[col].length && !(map.getTiles()[col][row+1] instanceof Water) && !(map.getTiles()[col][row+1].isSolid())) {
 			water(col, row+1, map, 0);
 		}
